@@ -1,0 +1,5 @@
+2025-08-05 10:39:15,642 - ERROR - Unexpected error occurred
+Traceback (most recent call last):
+  File "/Users/chrisowen/Documents/dev_projects/underwriting_rules.py", line 73, in main
+    age = int(input("Enter age: "))
+ValueError: invalid literal for int() with base 10: 'j'

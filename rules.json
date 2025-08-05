@@ -1,0 +1,50 @@
+[
+  {
+    "id": "R1",
+    "description": "Decline if age > 65 or applicant is a smoker",
+    "decision": "Decline",
+    "condition": "app.age > 65 or app.smoker"
+  },
+  {
+    "id": "R2",
+    "description": "Refer if BMI > 30 and blood pressure is High",
+    "decision": "Refer to Underwriter",
+    "condition": "app.bmi > 30 and app.bp == 'High'"
+  },
+  {
+    "id": "R3",
+    "description": "Decline if age < 18",
+    "decision": "Decline",
+    "condition": "app.age < 18"
+  },
+  {
+    "id": "R4",
+    "description": "Refer if applicant has history of chronic illness",
+    "decision": "Refer to Underwriter",
+    "condition": "'chronic_illness' in app.medical_flags"
+  },
+  {
+    "id": "R5",
+    "description": "Refer if applicant has history of heart disease",
+    "decision": "Refer to Underwriter",
+    "condition": "'heart_disease' in app.medical_flags"
+  },
+  {
+    "id": "R6",
+    "description": "Refer if applicant has cancer",
+    "decision": "Refer to Underwriter",
+    "condition": "'cancer' in app.medical_flags"
+  },
+  {
+    "id": "R7",
+    "description": "Decline if applicant has multiple major flags",
+    "decision": "Decline",
+    "condition": "len(app.medical_flags) >= 2"
+  },
+  {
+    "id": "R8",
+    "description": "Default approve",
+    "decision": "Approve",
+    "condition": "True"
+  }
+]

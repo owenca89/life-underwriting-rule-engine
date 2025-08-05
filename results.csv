@@ -1,0 +1,3 @@
+Age,Smoker,BMI,Blood Pressure,Medical Flags,Decision,Triggered Rule,Rule Description
+24,False,28.0,Normal,,Approve,R8,Default approve
+48,True,28.0,Normal,,Decline,R1,Decline if age > 65 or applicant is a smoker
